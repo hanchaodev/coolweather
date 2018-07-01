@@ -1,0 +1,13 @@
+<litepal>
+
+  <dbname value="cool_weather"/>
+   <version value="1"/>
+
+    <list>
+        <mapping class = "coolou.com.coolou.db.Province"/>
+        <mapping class="coolou.com.coolou.db.County"/>
+        <mapping class="coolou.com.coolou.db.City"/>
+
+    </list>
+
+</litepal>
