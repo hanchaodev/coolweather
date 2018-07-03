@@ -2,7 +2,8 @@ package coolou.com.coolou.db;
 
 import org.litepal.crud.DataSupport;
 
-/**县
+/**
+ * 县
  * Created by Administrator on 2018/6/27 0027.
  */
 
@@ -12,16 +13,15 @@ public class County extends DataSupport {
     private String countryName;
     private String weatherId;
 
-    public int getCountryId() {
-        return countryId;
+    public int getCityId() {
+        return cityId;
     }
 
-    public void setCountryId(int countryId) {
-        this.countryId = countryId;
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
     }
 
-    private int countryId;
-
+    private int cityId;
 
 
 

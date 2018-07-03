@@ -2,16 +2,26 @@ package coolou.com.coolou.db;
 
 import org.litepal.crud.DataSupport;
 
-/**城市
+/**
+ * 城市
  * Created by Administrator on 2018/6/27 0027.
  */
 
-public class City extends DataSupport{
+public class City extends DataSupport {
 
     private int id;
     private String cityName;
     private int CityCode;
-    private int cityId;
+
+    public int getProvinceId() {
+        return provinceId;
+    }
+
+    public void setProvinceId(int provinceId) {
+        this.provinceId = provinceId;
+    }
+
+    private int provinceId;
 
     public int getCityCode() {
         return CityCode;
@@ -20,17 +30,6 @@ public class City extends DataSupport{
     public void setCityCode(int cityCode) {
         CityCode = cityCode;
     }
-
-
-
-    public int getCityId() {
-        return cityId;
-    }
-
-    public void setCityId(int cityId) {
-        this.cityId = cityId;
-    }
-
 
 
     public int getId() {
@@ -48,7 +47,6 @@ public class City extends DataSupport{
     public void setCityName(String cityName) {
         this.cityName = cityName;
     }
-
 
 
 }

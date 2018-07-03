@@ -7,6 +7,20 @@
     tools:context="coolou.com.coolou.WeatherActivity"
     android:background="@color/colorPrimary"
     >
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/bing_pic_img"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ScrollView
         android:id="@+id/weather_layout"
         android:layout_width="match_parent"
@@ -15,6 +29,7 @@
         android:overScrollMode="never"
         >
         <LinearLayout
+            android:fitsSystemWindows="true"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -28,6 +43,12 @@
 
 
     </ScrollView>
-
-
+    </android.support.v4.widget.SwipeRefreshLayout>
+        <fragment
+            android:layout_gravity="start"
+            android:id="@+id/choose_fragment"
+            android:name="coolou.com.coolou.ChooseFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></fragment>
+    </android.support.v4.widget.DrawerLayout>
 </FrameLayout>
